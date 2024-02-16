@@ -1,0 +1,25 @@
+{
+  "name": "youtube-float-player",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-unicorn": "^50.0.1",
+    "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "tsup",
+    "dev": "tsup --watch src --watch styles",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .ts"
+  },
+  "type": "module"
+}
